@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+         .table {
+            position: relative;
+            width: 700px;
+            height: 1000px;
+            background-color: green;
+        }
+        .ball {
+            position: absolute;
+            background-color: white;
+            border-width: 3px;
+            border-color: black;
+            border-radius: 50%;
+            border-style: solid;
+            width: 50px;
+            height: 50px;
+            animation-name: slide;
+            animation-duration: 5s;
+            animation-timing-function: ease-out;
+            animation-iteration-count: infinite;
+        }
+        @keyframes slide {
+            0% {
+                transform: translate(300px, 950px);
+            }
+            20% {
+                transform: translate(650px, 450px);
+            }
+            40% {
+                transform: translate(300px, 0);
+            }
+            60% {
+                transform: translate(0, 450px);
+            }
+            80% {
+                transform: translate(300px, 950px);
+            }
+            100% {
+                transform: translate(300px, 950px);
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="table">
+        <div class="ball"></div>        
+    </div>
+</body>
+</html>
